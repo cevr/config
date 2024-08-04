@@ -12,8 +12,8 @@ export const config = {
 	proseWrap: 'always',
 	quoteProps: 'as-needed',
 	requirePragma: false,
-	semi: false,
-	singleAttributePerLine: false,
+	semi: true,
+	singleAttributePerLine: true,
 	singleQuote: true,
 	tabWidth: 2,
 	trailingComma: 'all',
@@ -39,9 +39,26 @@ export const config = {
 			},
 		},
 	],
-	plugins: ['prettier-plugin-tailwindcss'],
+	plugins: [
+		'@ianvs/prettier-plugin-sort-imports',
+		'prettier-plugin-tailwindcss',
+	],
 	tailwindAttributes: ['class', 'className', 'ngClass', '.*[cC]lassName'],
 	tailwindFunctions: ['clsx', 'cn'],
+	importOrder: [
+		// built-in modules include things like "fs", "http", etc.
+		'<BUILTIN_MODULES>',
+		'',
+		// third-party modules include things like "lodash", "react", etc.
+		'<THIRD_PARTY_MODULES>',
+		'',
+		// this is for absolute imports
+		'^~/(.*)$',
+		'',
+		// relative imports
+		'^[./]',
+		'',
+	],
 }
 
 // this is for backward compatibility
