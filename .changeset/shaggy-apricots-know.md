@@ -1,0 +1,5 @@
+---
+'@cevr/config': minor
+---
+
+init

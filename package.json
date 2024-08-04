@@ -1,15 +1,15 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@cevr/config",
+  "name": "@cvr/config",
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0",
   "description": "Reasonable ESLint configs for epic web devs",
   "main": "index.js",
   "type": "module",
   "imports": {
-    "#/*": "./*"
+    "~/*": "./*"
   },
   "exports": {
     ".": "./index.js",
@@ -20,10 +20,8 @@
   },
   "prettier": "./prettier.js",
   "scripts": {
-    "format": "prettier . --write",
-    "lint": "eslint .",
-    "typecheck": "tsc",
-    "validate": "run-p -l format lint typecheck"
+    "release": "changeset publish",
+    "version": "changeset version"
   },
   "keywords": [
     "config",
@@ -51,9 +49,10 @@
     "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.7",
     "@types/react": "^18.3.3",
+    "changeset": "^0.2.6",
     "eslint": "^9.8.0",
-    "npm-run-all": "^4.1.5",
     "prettier": "^3.3.3",
     "react": "^18.3.1",
     "typescript": "^5.5.4"
