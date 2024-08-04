@@ -1,3 +1,5 @@
+import sortImports from '@ianvs/prettier-plugin-sort-imports';
+
 /** @type {import("prettier").Options} */
 export const config = {
 	arrowParens: 'always',
@@ -40,7 +42,7 @@ export const config = {
 		},
 	],
 	plugins: [
-		'@ianvs/prettier-plugin-sort-imports',
+		sortImports,
 		'prettier-plugin-tailwindcss',
 	],
 	tailwindAttributes: ['class', 'className', 'ngClass', '.*[cC]lassName'],
@@ -59,7 +61,7 @@ export const config = {
 		'^[./]',
 		'',
 	],
-}
+};
 
 // this is for backward compatibility
-export default config
+export default config;
