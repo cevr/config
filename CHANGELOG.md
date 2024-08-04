@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.1.2
+
+### Patch Changes
+
+- 5f43e5a: remove rule
+
 ## 0.1.1
 
 ### Patch Changes
