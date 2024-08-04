@@ -14,7 +14,9 @@
   "exports": {
     ".": "./index.js",
     "./prettier": "./prettier.js",
-    "./typescript": "./typescript.json",
+    "./typescript/base": "./typescript.base.json",
+    "./typescript/app": "./typescript.app.json",
+    "./typescript/lib": "./typescript.lib.json",
     "./reset.d.ts": "./reset.d.ts",
     "./eslint": "./eslint.js"
   },
