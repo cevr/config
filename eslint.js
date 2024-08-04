@@ -120,6 +120,8 @@ export const config = [
 					parser: (await import('typescript-eslint')).parser,
 					parserOptions: {
 						projectService: true,
+						tsconfigRootDir: import.meta.dirname,
+						defaultProject: './tsconfig.json',
 					},
 				},
 				plugins: {
