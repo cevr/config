@@ -1,5 +1,5 @@
 ---
-'@cevr/config': minor
+'@cvr/config': minor
 ---
 
 init
