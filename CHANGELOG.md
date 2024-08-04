@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.2.0
+
+### Minor Changes
+
+- 574bfb6: add base/app/lib tsconfigs
+
 ## 0.1.2
 
 ### Patch Changes
