@@ -1,5 +1,3 @@
-import sortImports from '@ianvs/prettier-plugin-sort-imports';
-
 /** @type {import("prettier").Options} */
 export const config = {
 	arrowParens: 'always',
@@ -42,7 +40,7 @@ export const config = {
 		},
 	],
 	plugins: [
-		sortImports,
+		'@ianvs/prettier-plugin-sort-imports',
 		'prettier-plugin-tailwindcss',
 	],
 	tailwindAttributes: ['class', 'className', 'ngClass', '.*[cC]lassName'],
