@@ -53,7 +53,6 @@ export const config = [
 				ERROR,
 				{ terms: ['FIXME'], location: 'anywhere' },
 			],
-			'import/no-duplicates': [WARN, { 'prefer-inline': true }],
 		},
 	},
 
