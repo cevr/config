@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.1.1
+
+### Patch Changes
+
+- b07facb: Import sort imports
+
 ## 0.1.0
 
 ### Minor Changes
