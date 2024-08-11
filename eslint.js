@@ -1,27 +1,27 @@
-import { fixupPluginRules } from '@eslint/compat'
-import globals from 'globals'
+import { fixupPluginRules } from '@eslint/compat';
+import globals from 'globals';
 
-const ERROR = 'error'
-const WARN = 'warn'
+const ERROR = 'error';
+const WARN = 'warn';
 
 const has = (pkg) => {
 	try {
-		import.meta.resolve(pkg, import.meta.url)
-		return true
+		import.meta.resolve(pkg, import.meta.url);
+		return true;
 	} catch {
-		return false
+		return false;
 	}
-}
+};
 
-const hasTypeScript = has('typescript')
-const hasReact = has('react')
-const hasTestingLibrary = has('@testing-library/dom')
-const hasJestDom = has('@testing-library/jest-dom')
-const hasVitest = has('vitest')
-const hasTailwind = has('tailwindcss')
-const vitestFiles = ['**/__tests__/**/*', '**/*.test.*']
-const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles]
-const playwrightFiles = ['**/e2e/**']
+const hasTypeScript = has('typescript');
+const hasReact = has('react');
+const hasTestingLibrary = has('@testing-library/dom');
+const hasJestDom = has('@testing-library/jest-dom');
+const hasVitest = has('vitest');
+const hasTailwind = has('tailwindcss');
+const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
+const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
+const playwrightFiles = ['**/e2e/**'];
 
 export const config = [
 	{
@@ -119,9 +119,8 @@ export const config = [
 				languageOptions: {
 					parser: (await import('typescript-eslint')).parser,
 					parserOptions: {
-						projectService: true,
+						project: true,
 						tsconfigRootDir: import.meta.dirname,
-						defaultProject: './tsconfig.json',
 					},
 				},
 				plugins: {
@@ -297,7 +296,7 @@ export const config = [
 				},
 			}
 		: null,
-].filter(Boolean)
+].filter(Boolean);
 
 // this is for backward compatibility
-export default config
+export default config;
