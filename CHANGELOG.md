@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.2.2
+
+### Patch Changes
+
+- ede83d6: revert project service change
+
 ## 0.2.1
 
 ### Patch Changes
