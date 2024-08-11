@@ -119,7 +119,7 @@ export const config = [
 				languageOptions: {
 					parser: (await import('typescript-eslint')).parser,
 					parserOptions: {
-						project: true,
+						projectService: true,
 						tsconfigRootDir: import.meta.dirname,
 					},
 				},
