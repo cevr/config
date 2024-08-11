@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.3.0
+
+### Minor Changes
+
+- 8bf7607: use spaces instead of tab
+
 ## 0.2.2
 
 ### Patch Changes
