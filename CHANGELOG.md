@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.4.0
+
+### Minor Changes
+
+- edf06b6: update deps
+
 ## 0.3.1
 
 ### Patch Changes
