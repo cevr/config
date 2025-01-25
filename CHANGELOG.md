@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.4.1
+
+### Patch Changes
+
+- f1b4854: ensure react eslint is included for other react deps
+
 ## 0.4.0
 
 ### Minor Changes
