@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.5.0
+
+### Minor Changes
+
+- cfb270f: remove unsported eslint package
+
 ## 0.4.1
 
 ### Patch Changes
