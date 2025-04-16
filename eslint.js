@@ -23,7 +23,6 @@ const hasReact =
 const hasTestingLibrary = has('@testing-library/dom');
 const hasJestDom = has('@testing-library/jest-dom');
 const hasVitest = has('vitest');
-const hasTailwind = has('tailwindcss');
 const vitestFiles = ['**/__tests__/**/*', '**/*.test.*'];
 const testFiles = ['**/tests/**', '**/#tests/**', ...vitestFiles];
 const playwrightFiles = ['**/e2e/**'];
@@ -281,23 +280,6 @@ export const config = [
           // you don't want the editor to autofix this, but we do want to be
           // made aware of it
           'vitest/no-focused-tests': [WARN, { fixable: false }],
-        },
-      }
-    : null,
-
-  hasTailwind
-    ? {
-        files: ['**/*.ts?(x)', '**/*.js?(x)'],
-        plugins: {
-          tailwindcss: (await import('eslint-plugin-tailwindcss')).default,
-        },
-        rules: {
-          'tailwindcss/classnames-order': 'off',
-          'tailwindcss/no-custom-classname': 'off',
-          'tailwindcss/enforces-negative-arbitrary-values': ERROR,
-          'tailwindcss/enforces-shorthand': ERROR,
-          'tailwindcss/no-contradicting-classname': ERROR,
-          'tailwindcss/no-unnecessary-arbitrary-value': ERROR,
         },
       }
     : null,
