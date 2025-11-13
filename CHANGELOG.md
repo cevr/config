@@ -1,5 +1,11 @@
 # @cvr/config
 
+## 0.5.2
+
+### Patch Changes
+
+- a89d97d: update deps
+
 ## 0.5.1
 
 ### Patch Changes
